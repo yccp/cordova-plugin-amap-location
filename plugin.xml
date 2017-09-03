@@ -11,8 +11,7 @@
   <preference name="ANDROID_KEY" />
   <preference name="IOS_KEY" />
   <platform name="ios">
-    <pods-config ios-min-version="9.0" use-frameworks="true">
-    </pods-config>
+    <pods-config ios-min-version="9.0" use-frameworks="true"></pods-config>
     <pod name="AMapLocation-NO-IDFA" />
     <config-file target="config.xml" parent="/*">
       <feature name="AmapLocation">
@@ -26,7 +25,7 @@
     <header-file src="src/ios/AmapLocation.h" />
     <source-file src="src/ios/AmapLocation.m" />
   </platform>
-  <!-- <platform name="android">
+  <platform name="android">
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="AmapLocation">
         <param name="android-package" value="news.chen.yu.ionic.AmapLocation"/>
@@ -34,27 +33,20 @@
       <preference name="ANDROID_KEY" value="$ANDROID_KEY" />
     </config-file>
     <config-file target="AndroidManifest.xml" parent="/manifest">
-      <uses-permission android:name="android.permission.INTERNET" />
-      <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+      <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+      <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
       <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
       <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+      <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+      <uses-permission android:name="android.permission.INTERNET" />
       <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-      <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+      <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     </config-file>
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
-      <activity android:name="news.chen.yu.ionic.AmapLocation">
-        <intent-filter>
-          <action android:name="news.chen.yu.ionic.AmapLocation" />
-          <category android:name="android.intent.category.DEFAULT" />
-        </intent-filter>
-      </activity>
+      <service android:name="com.amap.api.location.APSService"></service>
+      <meta-data android:name="com.amap.api.v2.apikey" android:value="$ANDROID_KEY"></meta-data>
     </config-file>
-    <framework src="com.android.support:support-v4:+" value="gradle" />
     <framework src="src/android/AmapLocation.gradle" custom="true" type="gradleReference" />
-    <resource-file src="src/android/libs/alicloud-android-feedback-3.1.0.aar" target="libs/alicloud-android-feedback-3.1.0.aar" />
-    <resource-file src="src/android/libs/alicloud-android-monitor-2.5.1.1_for_bc_proguard.jar" target="libs/alicloud-android-monitor-2.5.1.1_for_bc_proguard.jar" />
-    <resource-file src="src/android/libs/alicloud-android-utils-1.0.3.jar" target="libs/alicloud-android-utils-1.0.3.jar" />
-    <resource-file src="src/android/libs/utdid4all-1.1.5.3_proguard.jar" target="libs/utdid4all-1.1.5.3_proguard.jar" />
     <source-file src="src/android/AmapLocation.java" target-dir="src/news/chen/yu/ionic" />
-  </platform> -->
+  </platform>
 </plugin>
