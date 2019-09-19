@@ -1,11 +1,39 @@
 {
-  "name": "cordova-plugin-amap-location",
-  "version": "1.0.0",
-  "description": "",
+  "_from": "cordova-plugin-amap-location",
+  "_id": "cordova-plugin-amap-location@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha1-fd8gPE86MuopVC67p+g/aHaVfKA=",
+  "_location": "/cordova-plugin-amap-location",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-plugin-amap-location",
+    "name": "cordova-plugin-amap-location",
+    "escapedName": "cordova-plugin-amap-location",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-amap-location/-/cordova-plugin-amap-location-1.0.0.tgz",
+  "_shasum": "7ddf203c4f3a32ea29542ebba7e83f6876957ca0",
+  "_spec": "cordova-plugin-amap-location",
+  "_where": "E:\\soft\\androidstudio\\coderepo\\androidtest",
+  "author": {
+    "name": "Yu Chen"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "> 支持ios, android 开通服务: [http://lbs.amap.com](http://lbs.amap.com)",
+  "license": "ISC",
   "main": "index.js",
+  "name": "cordova-plugin-amap-location",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Yu Chen",
-  "license": "ISC"
+  "version": "1.0.0"
 }

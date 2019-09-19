@@ -2,5 +2,5 @@ repositories {
     mavenCentral()
 }
 dependencies {
-    compile('com.amap.api:location:3.5.0')
+    implementation 'com.amap.api:location:4.7.0'
 }
