@@ -2,5 +2,14 @@ repositories {
     mavenCentral()
 }
 dependencies {
-    implementation 'com.amap.api:location:4.7.0'
+    //implementation 'com.amap.api:location:4.7.0'
+    //implementation fileTree(dir: 'libs', include: '*')
+}
+
+android {
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['app/src/main/libs']
+        }
+    }
 }

@@ -58,7 +58,20 @@
       <service android:name="com.amap.api.location.APSService"></service>
       <meta-data android:name="com.amap.api.v2.apikey" android:value="$ANDROID_KEY"></meta-data>
     </config-file>
+
     <framework src="src/android/AmapLocation.gradle" custom="true" type="gradleReference" />
     <source-file src="src/android/AmapLocation.java" target-dir="src/news/chen/yu/ionic" />
+    <source-file src="src/android/libs/AMap_Location_V4.7.1_20190803.jar" target-dir="app/src/main/libs" />
+    <source-file src="src/android/libs/arm64-v8a/libapssdk.so" target-dir="app/src/main/libs/arm64-v8a" />
+    <source-file src="src/android/libs/arm64-v8a/libJni_wgs2gcj.so" target-dir="app/src/main/libs/arm64-v8a" />
+    <source-file src="src/android/libs/armeabi/libapssdk.so" target-dir="app/src/main/libs/armeabi" />
+    <source-file src="src/android/libs/armeabi/libJni_wgs2gcj.so" target-dir="app/src/main/libs/armeabi" />
+    <source-file src="src/android/libs/armeabi-v7a/libapssdk.so" target-dir="app/src/main/libs/armeabi-v7a" />
+    <source-file src="src/android/libs/armeabi-v7a/libJni_wgs2gcj.so" target-dir="app/src/main/libs/armeabi-v7a" />
+    <source-file src="src/android/libs/x86/libapssdk.so" target-dir="app/src/main/libs/x86" />
+    <source-file src="src/android/libs/x86/libJni_wgs2gcj.so" target-dir="app/src/main/libs/x86" />
+    <source-file src="src/android/libs/x86_64/libapssdk.so" target-dir="app/src/main/libs/x86_64" />
+    <source-file src="src/android/libs/x86_64/libJni_wgs2gcj.so" target-dir="app/src/main/libs/x86_64" />
+
   </platform>
 </plugin>

@@ -161,7 +161,7 @@ public class AmapLocation extends CordovaPlugin implements AMapLocationListener{
                 if (r == PackageManager.PERMISSION_DENIED) {
                     LOG.d(TAG, "Permission Denied!");
                     result = new PluginResult(PluginResult.Status.ILLEGAL_ACCESS_EXCEPTION);
-                    callbcallbackack.sendPluginResult(result);
+                    callback.sendPluginResult(result);
                     return;
                 }
 
