@@ -72,8 +72,7 @@ public class AmapLocation extends CordovaPlugin implements AMapLocationListener{
         locationOption.setNeedAddress(needAddress);
         locationOption.setInterval(interval);
         locationClient.setLocationOption(locationOption);
-        int viewId = 100; // 根据CordovaActivity的createViews方法设置的
-        locationClient.startAssistantLocation(this.cordova.getActivity().findViewById(viewId));
+        locationClient.startAssistantLocation();//已测试可成功辅助H5调用SDK定位
     }
 
     @Override
