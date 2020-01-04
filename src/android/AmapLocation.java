@@ -78,6 +78,9 @@ public class AmapLocation extends CordovaPlugin implements AMapLocationListener{
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         callback = callbackContext;
+        if (!this.hasPermisssion()) {
+            this.requestPermissions(100);
+        }
         if (action.equals("getCurrentPosition")) {
             this.config(args);
             //设置为单次定位
